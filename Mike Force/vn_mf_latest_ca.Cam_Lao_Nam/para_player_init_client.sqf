@@ -36,6 +36,54 @@ player createDiaryRecord ["Diary", [localize "STR_vn_mf_howtobuild", localize "S
 
 player createDiaryRecord ["Diary", [localize "STR_vn_mf_other_keys", localize "STR_vn_mf_other_keys_long"], taskNull, "", false];
 
+player createDiaryRecord ["Diary", ["Server Information and Rules","
+<br/>
+<font size='18'>Server Rules</font>
+<br/>
+- Don't be a dick.
+<br/>
+- No Racism/Homphobia/Transphobia/Slurs.
+<br/>
+- Pilots must be on radio or will be kicked.
+<br/>
+- Ground elements MUST have an RTO with them.
+<br/>
+- Place callsigns on map markers in Side channel.
+<br/><br/>
+
+<font size='18'>Mod Whitelist</font>
+<br/>
+The following mods are whitelisted for clientside use:
+<br/>
+- DUI Squad Radar
+<br/>
+- Dynasound 2
+<br/>
+- Enhanced Soundscape
+<br/>
+- JSRS
+<br/>
+- Apricots MW NVGs
+<br/>
+- Enhanced Movement
+<br/>
+- Enhanced Movement Rework
+<br/>
+- Gibbs Insignia
+<br/>
+<br/>
+
+<font size='18'>Join us for regular Milsim Events!</font>
+<br/>
+Discord: <execute expression='copyToClipboard ""https://discord.gg/7jhcqFuGfb"";'>Copy Discord Link</execute>
+<br/>
+Reddit: <execute expression='copyToClipboard ""https://www.reddit.com/r/combinedarms"";'>Copy Reddit Link</execute>
+<br/>
+Event Website: <execute expression='copyToClipboard ""https://slotting.combinedarms.co.uk/"";'>Copy Event Website Link</execute>
+
+"], taskNull, "", false];
+
+
 // Instantiate the main scheduler
 [] call para_g_fnc_scheduler_subsystem_init;
 

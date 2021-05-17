@@ -75,11 +75,14 @@ The following mods are whitelisted for clientside use:
 
 <font size='18'>Join us for regular Milsim Events!</font>
 <br/>
+Teamspeak: <execute expression='copyToClipboard ""ts3.combinedarms.co.uk"";'>Copy Teamspeak Link</execute>
+<br/>
 Discord: <execute expression='copyToClipboard ""https://discord.gg/7jhcqFuGfb"";'>Copy Discord Link</execute>
 <br/>
 Reddit: <execute expression='copyToClipboard ""https://www.reddit.com/r/combinedarms"";'>Copy Reddit Link</execute>
 <br/>
 Event Website: <execute expression='copyToClipboard ""https://slotting.combinedarms.co.uk/"";'>Copy Event Website Link</execute>
+
 
 "], taskNull, "", false];
 

@@ -5165,35 +5165,49 @@ class Land_vn_i_shed_ind_old_f
 		class vehicle_spawning
 		{
 			class vehicles
-			{
-				class vn_b_wheeled_m54_02
-				{
-					/*Array currently unused, only the first number is used*/
-					cost[] = {{"BuildingSupplies", 500}};
-					cooldown = 300;
-					//side = "WEST";
-				};
+            {
+                class vn_b_wheeled_m54_mg_03
+                {
+                    /*Array currently unused, only the first number is used*/
+                    cost[] = {{"BuildingSupplies", 50}};
+                    cooldown = 60;
+                    //side = "WEST";
+                };
 
-				class vn_b_wheeled_m151_01
-				{
-					cost[] = {{"BuildingSupplies", 250}};
-					cooldown = 120;
-				};
+                class vn_b_wheeled_m151_mg_03
+                {
+                    cost[] = {{"BuildingSupplies", 50}};
+                    cooldown = 60;
+                };
 
-				class vn_b_wheeled_m151_mg_04
-				{
-					cost[] = {{"BuildingSupplies", 500}};
-					cooldown = 300;
-					//side = "WEST";
-				};
+                class vn_b_wheeled_m151_mg_04
+                {
+                    cost[] = {{"BuildingSupplies", 50}};
+                    cooldown = 60;
+                    //side = "WEST";
+                };
 
-				class vn_b_sf_static_m2_high
-				{
-					cost[] = {{"BuildingSupplies", 100}};
-					cooldown = 60;
-					//side = "WEST";
-				};
-			};
+                class vn_b_armor_m41_01_01
+                {
+                    cost[] = {{"BuildingSupplies", 15}};
+                    cooldown = 60;
+                    //side = "WEST";
+                };
+
+                class vn_b_sf_static_mortar_m2
+                {
+                    cost[] = {{"BuildingSupplies", 15}};
+                    cooldown = 60;
+                    //side = "WEST";
+                };
+
+                class vn_b_army_static_m2_high
+                {
+                    cost[] = {{"BuildingSupplies", 15}};
+                    cooldown = 60;
+                    //side = "WEST";
+                };
+            };
 
 			spawnPositionModelSpace[] = {6.00293,3.26758,-1.91181};
 			spawnDirectionModelSpace = 270;

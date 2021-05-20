@@ -14,13 +14,13 @@ respawnButton = 1;
 respawnOnStart = -1;
 respawnTemplates[] = { "MenuPosition" };
 onPauseScript = "";
-onLoadMission = QUOT(Mike Force (Beta VN_MF_VERSION) (Modified by Combined Arms v3));
+onLoadMission = QUOT(Mike Force (Beta VN_MF_VERSION) (Modified by Combined Arms v4));
 OnLoadIntro = "Welcome to Mike Force";
 loadScreen = "img\vn_mf_loadscreen.jpg";
 OnLoadIntroTime = 0;
 OnLoadMissionTime = 0;
-briefingName = QUOT(Mike Force (Beta VN_MF_VERSION) (Modified by Combined Arms v3));
-onLoadName = QUOT(Mike Force (Beta VN_MF_VERSION) (Modified by Combined Arms v3));
+briefingName = QUOT(Mike Force (Beta VN_MF_VERSION) (Modified by Combined Arms v4));
+onLoadName = QUOT(Mike Force (Beta VN_MF_VERSION) (Modified by Combined Arms v4));
 overviewPicture = "img\vn_mf_loadscreen.jpg";
 
 disabledAI = 1;

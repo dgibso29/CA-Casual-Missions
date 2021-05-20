@@ -20,13 +20,14 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={16377.803,177.59979,8074.8374};
+		pos[]={16341.034,110.6207,8092.2827};
 		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710671,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
-sourceName="vn_mf_latest_ca";
+sourceName="~vn_mf_latest_ca";
 addons[]=
 {
 	"A3_Ui_F",

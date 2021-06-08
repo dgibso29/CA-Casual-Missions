@@ -109,7 +109,7 @@ If you want to change a preset, it's recommended to set all four presets to 0 an
 28 = SFP (Woodland)
 29 = SFP (Desert)
 30 = LDF (Contact DLC) */
-KP_liberation_preset_blufor = 0;
+KP_liberation_preset_blufor = 21;
 
 /* OPFOR preset:
 0  = Custom (default vanilla CSAT)
@@ -133,7 +133,7 @@ KP_liberation_preset_blufor = 0;
 18 = CUP Chernarus Defense Force
 19 = CUP British Armed Forces (Desert)
 20 = CUP British Armed Forces (Woodland) */
-KP_liberation_preset_opfor = 0;
+KP_liberation_preset_opfor = 15;
 
 /* Resistance preset:
 0  = Custom (default vanilla FIA)
@@ -145,7 +145,7 @@ KP_liberation_preset_opfor = 0;
 6  = Unsung
 7  = CUP Takistani Locals
 8  = CUP National Party of Chernarus */
-KP_liberation_preset_resistance = 0;
+KP_liberation_preset_resistance = 8;
 
 /* Civilians preset:
 0  = Custom (default vanilla)
@@ -156,7 +156,7 @@ KP_liberation_preset_resistance = 0;
 5  = Unsung
 6  = CUP Takistani Civilians
 7  = CUP Chernarussian Civilians */
-KP_liberation_preset_civilians = 0;
+KP_liberation_preset_civilians = 7;
 
 /* Which arsenal preset should be used?
 0  = Use the default blacklist method (defined below)
@@ -283,148 +283,7 @@ KPLIB_radioTowerClassnames = [
 /* - Default arsenal blacklist method.
 Useless if you're using anything other than "kp_liberation_arsenal = 0;" above. A whitelisted arsenal is always more performance friendly then a blacklisted arsenal.
 REMEMBER: All static turret and UAV bags should be defined here, to stop players from exploiting free resources via the virtual arsenal.    */
-blacklisted_from_arsenal = [
-    "B_AA_01_weapon_F",
-    "B_AT_01_weapon_F",
-    "B_GMG_01_A_weapon_F",
-    "B_GMG_01_high_weapon_F",
-    "B_GMG_01_weapon_F",
-    "B_HMG_01_A_weapon_F",
-    "B_HMG_01_high_weapon_F",
-    "B_HMG_01_support_F",
-    "B_HMG_01_support_high_F",
-    "B_HMG_01_weapon_F",
-    "B_Mortar_01_support_F",
-    "B_Mortar_01_weapon_F",
-    "B_Respawn_Sleeping_bag_blue_F",
-    "B_Respawn_Sleeping_bag_brown_F",
-    "B_Respawn_Sleeping_bag_F",
-    "B_Respawn_TentA_F",
-    "B_Respawn_TentDome_F",
-    "B_UAV_01_backpack_F",
-    "B_UAV_06_backpack_F",
-    "B_UAV_06_medical_backpack_F",
-    "B_UGV_02_Demining_backpack_F",
-    "B_UGV_02_Science_backpack_F",
-    "C_IDAP_UAV_01_backpack_F",
-    "C_IDAP_UAV_06_antimine_backpack_F",
-    "C_IDAP_UAV_06_backpack_F",
-    "C_IDAP_UAV_06_medical_backpack_F",
-    "C_IDAP_UGV_02_Demining_backpack_F",
-    "C_UAV_06_backpack_F",
-    "C_UAV_06_medical_backpack_F",
-    "I_AA_01_weapon_F",
-    "I_AT_01_weapon_F",
-    "I_C_HMG_02_high_weapon_F",
-    "I_C_HMG_02_support_F",
-    "I_C_HMG_02_support_high_F",
-    "I_C_HMG_02_weapon_F",
-    "I_E_AA_01_weapon_F",
-    "I_E_AT_01_weapon_F",
-    "I_E_GMG_01_A_Weapon_F",
-    "I_E_GMG_01_high_Weapon_F",
-    "I_E_GMG_01_Weapon_F",
-    "I_E_HMG_01_A_Weapon_F",
-    "I_E_HMG_01_high_Weapon_F",
-    "I_E_HMG_01_support_F",
-    "I_E_HMG_01_support_high_F",
-    "I_E_HMG_01_Weapon_F",
-    "I_E_HMG_02_high_weapon_F",
-    "I_E_HMG_02_support_F",
-    "I_E_HMG_02_support_high_F",
-    "I_E_HMG_02_weapon_F",
-    "I_E_Mortar_01_support_F",
-    "I_E_Mortar_01_Weapon_F",
-    "I_E_UAV_01_backpack_F",
-    "I_E_UAV_06_backpack_F",
-    "I_E_UAV_06_medical_backpack_F",
-    "I_E_UGV_02_Demining_backpack_F",
-    "I_E_UGV_02_Science_backpack_F",
-    "I_G_HMG_02_high_weapon_F",
-    "I_G_HMG_02_support_F",
-    "I_G_HMG_02_support_high_F",
-    "I_G_HMG_02_weapon_F",
-    "I_GMG_01_A_weapon_F",
-    "I_GMG_01_high_weapon_F",
-    "I_GMG_01_weapon_F",
-    "I_HMG_01_A_weapon_F",
-    "I_HMG_01_high_weapon_F",
-    "I_HMG_01_support_F",
-    "I_HMG_01_support_high_F",
-    "I_HMG_01_weapon_F",
-    "I_HMG_02_high_weapon_F",
-    "I_HMG_02_support_F",
-    "I_HMG_02_support_high_F",
-    "I_HMG_02_weapon_F",
-    "I_Mortar_01_support_F",
-    "I_Mortar_01_weapon_F",
-    "I_UAV_01_backpack_F",
-    "I_UAV_06_backpack_F",
-    "I_UAV_06_medical_backpack_F",
-    "I_UGV_02_Demining_backpack_F",
-    "I_UGV_02_Science_backpack_F",
-    "O_AA_01_weapon_F",
-    "O_AT_01_weapon_F",
-    "O_GMG_01_A_weapon_F",
-    "O_GMG_01_high_weapon_F",
-    "O_GMG_01_weapon_F",
-    "O_HMG_01_A_weapon_F",
-    "O_HMG_01_high_weapon_F",
-    "O_HMG_01_support_F",
-    "O_HMG_01_support_high_F",
-    "O_HMG_01_weapon_F",
-    "O_Mortar_01_support_F",
-    "O_Mortar_01_weapon_F",
-    "O_UAV_01_backpack_F",
-    "O_UAV_06_backpack_F",
-    "O_UAV_06_medical_backpack_F",
-    "O_UGV_02_Demining_backpack_F",
-    "O_UGV_02_Science_backpack_F",
-    "RHS_AGS30_Gun_Bag",
-    "RHS_AGS30_Tripod_Bag",
-    "RHS_DShkM_Gun_Bag",
-    "RHS_DShkM_TripodHigh_Bag",
-    "RHS_DShkM_TripodLow_Bag",
-    "RHS_Kord_Gun_Bag",
-    "RHS_Kord_Tripod_Bag",
-    "RHS_Kornet_Gun_Bag",
-    "RHS_Kornet_Tripod_Bag",
-    "RHS_M2_Gun_Bag",
-    "RHS_M2_MiniTripod_Bag",
-    "RHS_M2_Tripod_Bag",
-    "rhs_M252_Bipod_Bag",
-    "rhs_M252_Gun_Bag",
-    "RHS_Metis_Gun_Bag",
-    "RHS_Metis_Tripod_Bag",
-    "RHS_Mk19_Gun_Bag",
-    "RHS_Mk19_Tripod_Bag",
-    "RHS_NSV_Gun_Bag",
-    "RHS_NSV_Tripod_Bag",
-    "RHS_Podnos_Bipod_Bag",
-    "RHS_Podnos_Gun_Bag",
-    "RHS_SPG9_Gun_Bag",
-    "RHS_SPG9_Tripod_Bag",
-    "rhs_Tow_Gun_Bag",
-    "rhs_TOW_Tripod_Bag",
-    "UK3CB_BAF_L111A1",
-    "UK3CB_BAF_L134A1",
-    "UK3CB_BAF_L16_Tripod",
-    "UK3CB_BAF_L16",
-    "UK3CB_BAF_M6",
-    "UK3CB_BAF_Tripod",
-    "uns_M1_81mm_mortar_US_Bag",
-    "uns_M1919_low_US_Bag",
-    "uns_M2_60mm_mortar_US_Bag",
-    "uns_m2_high_US_Bag",
-    "uns_M2_low_US_Bag",
-    "uns_M30_107mm_mortar_US_Bag",
-    "uns_M60_high_US_Bag",
-    "uns_M60_low_US_Bag",
-    "uns_MK18_low_US_Bag",
-    "uns_STABO_US_Bag",
-    "uns_Tripod_Bag",
-    "Uns_US_searchlight_Bag"
-];
+blacklisted_from_arsenal = [];
 
 // Items which should be added as allowed Items, when they get blacklisted, even if they are not in the blacklisted_from_arsenal array
 KP_liberation_allowed_items_extension = [

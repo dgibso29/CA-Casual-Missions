@@ -47,7 +47,7 @@ if (!isDedicated && hasInterface) then {
     if (debug_source != name player) then {debug_source = name player};
     [] call compileFinal preprocessFileLineNumbers "scripts\client\init_client.sqf";
 } else {
-    setViewDistance 1600;
+    setViewDistance 4000;
 };
 
 // Execute fnc_reviveInit again (by default it executes in postInit)

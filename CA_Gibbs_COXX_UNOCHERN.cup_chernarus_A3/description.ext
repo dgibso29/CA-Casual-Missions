@@ -1,0 +1,510 @@
+
+#include "macros.hpp"
+#include "startup\configuration\internals\configMacros.hpp"
+#include "startup\configuration\internals\configClasses.hpp"
+
+
+// ============================================================================================
+
+
+class Header
+{
+	// Available gameTypes:
+	// Coop:	|	Coop Mission: The Bread and Butter of CA missions
+	// DM		|	Death Match
+	// TDM		|	Team Death Match
+	// CTF		|	Capture The Flag (or, nuke)
+	// SC		|	Sector Control (Think insurgency - the red/green squares)
+	// RPG		|	Skyrim
+	// Sandbox	|	Free Game type, think Shady Swindle
+	// Seize	|	Seize a location
+	// Defend	|	Defend a location
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 100;
+};
+
+
+// ============================================================================================
+
+
+onLoadName = "*** Insert mission name here. ***";
+onLoadMission = "Made with the CAFE3 Framework";
+author = "*** Insert mission author name here. ***";
+loadScreen = "ca_logo_large.jpg";
+
+
+// ============================================================================================
+
+
+enableDebugConsole = 1;
+
+// CAFE - Debug variable, needs to exist pre-init.
+#include "startup\configuration\internals\debug.sqf"
+
+
+// ============================================================================================
+
+
+// CAFE - Respawn Settings
+// Credits: Please see the CAFE online manual (https://github.com/CombinedArmsGaming/CAFE3/wiki)
+// 1	|	Respawn as Bird (for normal mission, no reinforcements).
+// 2	|	Respawn on death location without gear, used in special missions.
+// 3	|	Respawn at base marker (used when reinforcements are an option).
+// 4	|	Respawn either in group if an AI slot is filled or as seagull.
+// If 3 is chosen, place down makers with the following names as necessary:
+// respawn_west, respawn_guerilla, respawn_east, respawn_civillian.
+
+respawn = 3; //Suggested NOT to change this
+respawndelay = 3;
+respawnOnStart = 0;
+respawnTemplates[] = {"respawnWaves"};	// remove "f_spectator" when using respawn.
+respawnDialog = 0;
+
+
+// ============================================================================================
+
+forceRotorLibSimulation = 0;
+
+// ============================================================================================
+
+disabledAI = true;
+
+// ============================================================================================
+
+cba_settings_hasSettingsFile = 1;
+
+// ============================================================================================
+
+
+#ifdef ENABLE_GRAVESTONE_CORPSE_MANAGER
+
+corpseManagerMode = 0;
+
+#else
+
+corpseManagerMode = 1;
+
+#endif
+
+corpseLimit = 15;
+corpseRemovalMinTime = 60; //seconds
+corpseRemovalMaxTime = 300; //seconds
+
+
+// ============================================================================================
+
+
+class cfgNotifications
+{
+	// Notification Template
+	class Template
+	{
+		title = ""; // Tile displayed as text on black background. Filled by arguments.
+		iconPicture = ""; // Small icon displayed in left part. Colored by "color", filled by arguments.
+		iconText = ""; // Short text displayed over the icon. Colored by "color", filled by arguments.
+		description = ""; // Brief description displayed as structured text. Colored by "color", filled by arguments.
+		color[] = {1,1,1,1}; // Icon and text color
+		duration = 5; // How many seconds will the notification be displayed
+		priority = 0; // Priority; higher number = more important; tasks in queue are selected by priority
+		difficulty[] = {}; // Required difficulty settings. All listed difficulties has to be enabled
+	};
+
+	// A generic warning notification
+	class Alert
+	{
+		title = "ALERT";
+		description = "%1";
+		iconPicture="\A3\ui_f\data\map\markers\military\warning_ca.paa";
+		duration = 3;
+		priority = 9;
+	};
+
+	// Notification for the CAFE Mapclick Teleport component
+	class MapClickTeleport
+	{
+		title= "NOTE";
+		description= "%1";
+		iconPicture = "\A3\ui_f\data\map\markers\military\start_ca.paa";
+		duration = 3;
+		priority = 5;
+	};
+
+	// Notification for the CAFE Mapclick Supply Drop component
+	class MapClickSupplyDrop
+	{
+		title= "NOTE";
+		description= "%1";
+		iconPicture = "\A3\ui_f\data\map\markers\military\start_ca.paa";
+		duration = 3;
+		priority = 5;
+	};
+
+	// Notification for the CAFE JIP Component
+	class JIP
+	{
+		title= "REINFORCEMENTS";
+		description= "%1";
+		iconPicture = "\A3\ui_f\data\map\markers\military\flag_ca.paa";
+		duration = 3;
+		priority = 5;
+	};
+
+};
+
+
+// ============================================================================================
+
+
+class CfgDebriefing
+{
+	#include "configuration\endings.hpp"
+};
+
+
+// ============================================================================================
+
+
+class CfgRespawnTemplates
+{
+	/*
+	class f_Spectator
+	{
+		onPlayerRespawn = "f_fnc_CamInit";
+	};
+
+	// CAFE JIP Menu
+	class f_JIP
+	{
+		onPlayerRespawn = "f\JIP\f_JIP_playerRespawn.sqf";
+	};
+	//*/
+	//*
+	class respawnWaves
+	{
+		onPlayerRespawn = "respawnTemplates\respawnWaves\onPlayerRespawn.sqf";
+	    onPlayerKilled = "respawnTemplates\respawnWaves\onPlayerKilled.sqf";
+	};
+	//*/
+};
+
+
+// ============================================================================================
+
+
+class Params
+{
+	#include "components\missionParameters.hpp"
+};
+
+
+
+
+class CfgFunctions
+{
+	#include "components\functions.hpp"
+
+	class CAFEConfig
+	{
+		class PreInit
+		{
+			class clientConfigGroup
+			{
+				file = "startup\configuration\groups\clientConfigGroup_preInit.sqf";
+				preInit = 1;
+			};
+
+			class serverConfigGroup
+			{
+				file = "startup\configuration\groups\serverConfigGroup_preInit.sqf";
+				preInit = 1;
+			};
+		};
+	};
+};
+
+
+
+
+class CfgUnitInsignia
+{
+	#include "res\insignia\defines.hpp"
+};
+
+
+// ============================================================================================
+
+
+// Adds to the debriefing possible kills and possible reasons for deaths as well, so after an operation don't go straight to mission select. Its the fourth tab after score.
+class CfgDebriefingSections
+{
+	class acex_killTracker
+	{
+			title = "Acex Killed Events";
+			variable = "acex_killTracker_outputText";
+	};
+
+};
+
+
+// ============================================================================================
+
+
+// Custom Sounds - Be advised, if you use a cfgSound in a mission,
+// it will play until the file stops, Sounds cannot be interrupted
+// unless the object playing the sound is killed or otherwise destroyed.
+// Sound files can be played in 3D, and are an effect for volume purposes.
+/*
+class CfgSounds
+{
+	sounds[] = {};
+	class wolf1
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "my_wolf_sound";
+		// filename, volume, pitch
+		sound[] = {"wolf1.ogg", 1, 1};
+		// subtitle delay in seconds, subtitle text
+		titles[] = {1, "*wolf growls*"};
+	};
+};
+*/
+
+
+// ============================================================================================
+
+
+// Custom Music - Can generally be stopped, but plays globally. Cannot be played in 3D
+// from an object but is affected by the Music volume slider.
+class CfgMusic
+{
+	tracks[]={};
+
+	class FourStringEnding
+	{
+		name = "FourStringEnding";
+		sound[] = {"\res\sounds\FourStringEnding.ogg",db+1, 1};
+	};
+
+};
+
+
+
+// ============================================================================================
+
+
+#include "dialogs.hpp"
+
+
+class RscTitles
+{
+	#include "titles.hpp"
+};
+
+
+
+
+// Makes splendid camera still show chat after quitting splendid camera.
+class Extended_DisplayUnload_EventHandlers
+{
+    class RscDisplayCamera
+	{
+        ca_fixcamera = "showChat true";
+    };
+
+	class RscDisplayCurator
+	{
+		clientDisplayUnload = "[] call f_fnc_exitZeus;";
+	};
+};
+
+
+// ============================================================================================
+
+
+class Extended_Killed_EventHandlers
+{
+
+#ifdef ENABLE_KILL_TRACKING
+
+	class AllVehicles
+	{
+		class killTracking
+		{
+			killed = "_this call f_fnc_trackKilledEvent";
+		};
+
+	};
+
+#endif
+
+
+#ifdef ENABLE_GRAVESTONE_CORPSE_MANAGER
+
+	class CAManBase
+	{
+		class gravestones
+		{
+			killed = "_this call f_fnc_addToGravestoneManager";
+		};
+
+	};
+
+#endif
+
+};
+
+
+// ============================================================================================
+
+
+class Extended_PreInit_EventHandlers
+{
+	class AddCustomSettings
+	{
+		init = "call compile preprocessFileLineNumbers 'components\miscShared\fn_addCustomSettings.sqf'";
+	};
+
+#ifdef ENABLE_SCALE_SUPPORT
+
+	class AddEdenScaleSupport
+	{
+		init = "call compile preprocessFileLineNumbers 'components\miscShared\fn_edenScaleSupport.sqf'";
+	};
+
+#endif
+
+};
+
+
+// ============================================================================================
+
+
+class Extended_InitPost_EventHandlers
+{
+
+#ifdef ENABLE_KILL_TRACKING
+
+	class AllVehicles
+	{
+		init = "_obj = _this select 0; _obj setVariable ['f_var_side', side _obj, true]";
+	};
+
+#endif
+
+
+
+
+    class CAManBase
+	{
+
+#ifdef ENABLE_INVENTORY_ACTION
+
+        class addInventoryAction
+		{
+            init = "_this call f_fnc_addInventoryActionToClass";
+        };
+
+#endif
+
+#ifdef ENABLE_VIEWDISTANCE_EDITOR
+
+		class addViewDistanceAction
+		{
+			init = "_this call f_fnc_addViewDistanceActionToClass";
+		};
+
+#endif
+
+		class addSquadManagerActions
+		{
+            init = "_this call f_fnc_addSquadManagerActionsToClass";
+        };
+
+		// For JIP compatibility with insignias.
+		class reapplyInsigniaLocal
+		{
+            init = "_this call f_fnc_reapplyInsigniaLocal";
+        };
+
+    };
+
+
+
+
+	class LandVehicle
+	{
+
+#ifdef ENABLE_UNFLIP_ACTION
+
+		class addUnflipAction
+		{
+			init = "_this call f_fnc_addUnflipActionToClass";
+		};
+
+#endif
+
+		class addAiDriverAction
+		{
+			init = "_this call f_fnc_addAiDriverActions";
+		};
+
+	};
+
+
+
+#ifdef ENABLE_PUSH_BOATS_ACTION
+
+	class Ship
+	{
+		class addPushAction
+		{
+			init = "_this call f_fnc_addPushActionToClass";
+		};
+	};
+
+#endif
+
+
+
+
+/*
+	class Helicopter
+	{
+		class addMusic
+		{
+			init = "_this call f_fnc_addHeliMusic";
+		};
+
+	};
+*/
+
+};
+
+
+
+
+// ============================================================================================
+
+
+
+
+class Extended_DisplayLoad_EventHandlers
+{
+    class RscDiary
+	{
+		CAFE_SquadMarkers = "[_this#0, (_this#0) displayCtrl 51] call f_fnc_createSquadMarkerHook;";
+        CAFE_FireteamMarkers = "[_this#0, (_this#0) displayCtrl 51] call f_fnc_createFireteamMarkerHook;";
+    };
+
+    class RscCustomInfoMiniMap
+	{
+		CAFE_SquadMarkers = "[_this#0, (_this#0) displayCtrl 101] call f_fnc_createSquadMarkerHook;";
+	    CAFE_FireteamMarkers = "[_this#0, (_this#0) displayCtrl 101] call f_fnc_createFireteamMarkerHook;";
+    };
+
+	class RscDisplayCurator
+	{
+		clientDisplayLoad = "[] call f_fnc_openZeus;";
+	};
+};

@@ -46,10 +46,10 @@
 <Project name="Liberation">
     <Package name="Liberation">
         <Key ID="STR_MISSION_TITLE">
-            <Original>Normandy Liberation</Original>
+            <Original>CTI 34 KP Liberation v0.96.7a</Original>
         </Key>
         <Key ID="STR_MISSION_VERSION">
-            <Original>Gibbs Edition v1</Original>
+            <Original>v0.96.7a</Original>
         </Key>
         <Key ID="STR_Deploy_OnPoint">
             <Original>Deploy</Original>

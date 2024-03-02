@@ -51,8 +51,6 @@ KP_liberation_medical_vehicles = [
     "uns_ch47a_medevac",
     "uns_H13_medevac_CAV",
     "uns_M577_amb",
-    "SPE_OpelBlitz_Ambulance",
-    "SPE_US_M3_Halftrack_Ambulance",
     "uns_uh1D_med"
 ];
 
@@ -178,7 +176,7 @@ KP_liberation_preset_civilians = 0;
 14 = CSAT Green Hex arsenal preset
 15 = AAF arsenal preset
 16 = LDF arsenal preset */
-KP_liberation_arsenal = 1;
+KP_liberation_arsenal = 0;
 
 /* - Fuel consumption settings.
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine. */
@@ -194,9 +192,9 @@ GRLIB_save_key = "KP_LIBERATION_" + (toUpper worldName) + "_SAVEGAME";
 
 KP_liberation_save_interval = 60;                                       // Interval in seconds for automatic save.
 
-GRLIB_side_friendly = RESISTANCE;                                             // Friendly side.
-GRLIB_side_enemy = WEST;                                                // Enemy side.
-GRLIB_side_resistance = EAST;                                     // Resistance side.
+GRLIB_side_friendly = WEST;                                             // Friendly side.
+GRLIB_side_enemy = EAST;                                                // Enemy side.
+GRLIB_side_resistance = RESISTANCE;                                     // Resistance side.
 GRLIB_side_civilian = CIVILIAN;                                         // Civilian side.
 GRLIB_respawn_marker = "respawn";                                       // Respawn marker name.
 
@@ -216,7 +214,7 @@ GRLIB_capture_size = 175;                                               // Range
 GRLIB_defended_buildingpos_part = 0.4;                                  // Multiplier for defenders in buildings.
 GRLIB_battlegroup_size = 6;                                             // Size of enemy battlegroups.
 GRLIB_vulnerability_timer = 1200;                                       // Time in seconds how long a captured sector is vulnerable to enemy troops.
-GRLIB_radiotower_size = 3000;                                           // Radio Tower scanning range.
+GRLIB_radiotower_size = 2500;                                           // Radio Tower scanning range.
 GRLIB_surrender_chance = 80;                                            // Chance that enemy infantry will surrender after heavy losses are encountered.
 
 GRLIB_civilians_amount = 10;                                            // Civilian count multiplier.
@@ -227,11 +225,11 @@ GRLIB_sector_cap = 180;                                                 // Cap f
 GRLIB_battlegroup_cap = 150;                                            // Cap for enemy battlegroups.
 GRLIB_patrol_cap = 150;                                                 // Cap for enemy patrols.
 
-KP_liberation_cr_kill_penalty = 3;                                      // Civil Reputation penalty for killing a civilian.
-KP_liberation_cr_building_penalty = 2;                                  // Civil Reputation penalty for destroying/damaging a building.
-KP_liberation_cr_vehicle_penalty = 1;                                   // Civil Reputation penalty for stealing a civilian vehicle.
+KP_liberation_cr_kill_penalty = 5;                                      // Civil Reputation penalty for killing a civilian.
+KP_liberation_cr_building_penalty = 3;                                  // Civil Reputation penalty for destroying/damaging a building.
+KP_liberation_cr_vehicle_penalty = 2;                                   // Civil Reputation penalty for stealing a civilian vehicle.
 KP_liberation_cr_resistance_penalty = 3;                                // Civil Reputation penalty for killing a friendly resistance soldier.
-KP_liberation_cr_sector_gain = 7;                                       // Civil Reputation gain for liberate a sector.
+KP_liberation_cr_sector_gain = 5;                                       // Civil Reputation gain for liberate a sector.
 KP_liberation_cr_wounded_chance = 35;                                   // Chance (0-100) that there are wounded civilians right after capturing a sector.
 KP_liberation_cr_wounded_gain = 2;                                      // Civil Reputation gain for providing medical assistance for wounded civilians.
 
@@ -709,11 +707,6 @@ KPLIB_transportConfigs = [
     ["uns_m37b1", -5, [0,-1.8,0.15]],
     ["uns_nvatruck_mg", -5, [0,-1.05,0.8], [0,-2.75,0.8]],
     ["uns_nvatruck_open", -5, [0,-1.05,0.8], [0,-2.75,0.8]],
-    ["uns_nvatruck_mg", -5, [0,-1.05,0.8], [0,-2.75,0.8]],
-    ["SPE_US_M3_Halftrack_Unarmed_Open", -5, [0,-1.05,0.8], [0,-2.75,0.8]],
-    ["SPE_US_M3_Halftrack_Unarmed", -5, [0,-1.05,0.8], [0,-2.75,0.8]],
-    ["SPE_OpelBlitz", -5, [0,-1.05,0.8], [0,-2.75,0.8]],
-    ["SPE_OpelBlitz_Open", -5, [0,-1.05,0.8], [0,-2.75,0.8]],
     ["uns_nvatruck", -5, [0,-1.05,0.8], [0,-2.75,0.8]]
 ];
 
@@ -758,8 +751,6 @@ KPLIB_aiResupplySources = [
     "sfp_tgb40_ammo",
     "uns_M113_ENG",
     "uns_M35A2_ammo",
-    "SPE_US_M3_Halftrack_Ammo",
-    "SPE_OpelBlitz_Ammo",
     "uns_motorpool1_repair"
 ];
 
@@ -803,8 +794,6 @@ vehicle_repair_sources = [
     "UNS_Hanger_repair",
     "uns_M113_ENG",
     "uns_M35A2_repair",
-    "SPE_US_M3_Halftrack_Repair",
-    "SPE_OpelBlitz_Repair",
     "uns_motorpool1_repair"
 ];
 
@@ -846,8 +835,6 @@ vehicle_rearm_sources = [
     "rhsusf_M977A4_AMMO_usarmy_wd",
     "sfp_tgb40_ammo",
     "uns_M113_ENG",
-    "SPE_US_M3_Halftrack_Ammo",
-    "SPE_OpelBlitz_Ammo",
     "uns_M35A2_ammo"
 ];
 
@@ -890,8 +877,6 @@ vehicle_refuel_sources = [
     "sfp_tgb40_fuel",
     "uns_M113_ENG",
     "uns_M35A2_fuel",
-    "SPE_US_M3_Halftrack_Fuel",
-    "SPE_OpelBlitz_Fuel",
     "uns_M35A2_fueltanker"
 ];
 
@@ -1044,9 +1029,6 @@ KP_liberation_suppMod_artyVeh = [
     "uns_M2_60mm_mortar_pvp",
     "uns_M2_60mm_mortar",
     "uns_M30_107mm_mortar",
-    "SPE_GrW278_1",
-    "SPE_leFH18",
-    "SPE_M1_81",
     "uns_Type55_mortar"
 ];
 

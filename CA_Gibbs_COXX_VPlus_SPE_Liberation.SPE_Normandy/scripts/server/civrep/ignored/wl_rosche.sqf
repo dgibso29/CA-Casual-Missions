@@ -9,7 +9,7 @@ KP_liberation_cr_ign_buildings = [
 	"Land_cmp_Shed_F",
 	"Land_cmp_Tower_F",
 	"Land_CncShelter_F",
-	"Land_Antenna",
+	"Land_Communication_F",
 	"Land_Dirthump01",
 	"Land_dp_smallTank_F",
 	"Land_DPP_01_waterCooler_ladder_F",

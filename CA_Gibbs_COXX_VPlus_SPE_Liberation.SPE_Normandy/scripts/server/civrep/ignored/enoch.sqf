@@ -11,7 +11,7 @@ KP_liberation_cr_ign_buildings = [
     "Land_CastleRuins_01_wall_d_R_F",
     "Land_ChickenCoop_01_F",
     "Land_cmp_Shed_dam_F",
-    "Land_Antenna",
+    "Land_Communication_F",
     "Land_ConcreteWell_02_F",
     "Land_Cross_01_small_F",
     "Land_DeerStand_01_F",

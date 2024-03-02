@@ -73,7 +73,7 @@ for "_i" from 1 to _amount do {
     if ((_tier > 1) && ((random 100) <= KP_liberation_resistance_at_chance)) then {
         _unit addBackpack "B_FieldPack_cbr";
         for "_i" from 1 to 3 do {_unit addItemToBackpack "RPG7_F";};
-        _unit addWeapon "SPE_PzFaust_60m";
+        _unit addWeapon "launch_RPG7_F";
     };
 };
 

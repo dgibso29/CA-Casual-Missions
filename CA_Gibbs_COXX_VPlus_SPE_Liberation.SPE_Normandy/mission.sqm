@@ -13,18 +13,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=454;
+		nextID=455;
 	};
 	class LayerIndexProvider
 	{
-		nextID=9;
+		nextID=10;
 	};
 	class Camera
 	{
-		pos[]={3136.9958,76.609703,14771.884};
-		dir[]={-0.80611134,-0.58897173,0.057448864};
-		up[]={-0.58748209,0.80815363,0.041867889};
-		aside[]={0.071086414,2.4738256e-009,0.99747163};
+		pos[]={5874.3389,112.90185,14550.995};
+		dir[]={-0.75761223,-0.52548802,0.38715124};
+		up[]={-0.46793097,0.85080099,0.23911975};
+		aside[]={0.4550432,1.4901161e-008,0.89046931};
 	};
 };
 binarizationWanted=0;
@@ -59,7 +59,8 @@ addons[]=
 	"WW2_SPE_Assets_c_Vehicles_ModelConfig_c",
 	"WW2_SPE_Core_c_Core_c_Eventhandlers",
 	"WW2_SPE_Assets_c_Weapons_Ammoboxes_c",
-	"WW2_SPE_Assets_c_Weapons_SimpleObjects_c"
+	"WW2_SPE_Assets_c_Weapons_SimpleObjects_c",
+	"A3_Modules_F_Hc"
 };
 class AddonsMetaData
 {
@@ -364,7 +365,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=54;
+		items=55;
 		class Item0
 		{
 			dataType="Layer";
@@ -1212,7 +1213,7 @@ class Mission
 					text="Operation Base";
 					type="mil_start";
 					colorName="ColorWEST";
-					angle=0.44420758;
+					angle=0.44420746;
 					id=66;
 				};
 				class Item25
@@ -9610,6 +9611,16 @@ class Mission
 			id=453;
 			type="SPE_BasicWeaponsBox_US";
 			atlOffset=3.0517578e-005;
+		};
+		class Item54
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={173.15244,41.103489,12787.972};
+			};
+			id=454;
+			type="HighCommand";
 		};
 	};
 	class Connections

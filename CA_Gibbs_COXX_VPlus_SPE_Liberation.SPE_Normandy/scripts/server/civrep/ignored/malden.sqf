@@ -6,7 +6,7 @@ KP_liberation_cr_ign_buildings = [
 	"Land_Cargo_Patrol_V4_F",
 	"Land_Cargo_Tower_V4_F",
 	"Land_Carousel_01_F",
-	"Land_Antenna",
+	"Land_Communication_F",
 	"Land_d_House_Big_01_V1_F",
 	"Land_d_House_Big_02_V1_F",
 	"Land_d_House_Small_01_V1_F",

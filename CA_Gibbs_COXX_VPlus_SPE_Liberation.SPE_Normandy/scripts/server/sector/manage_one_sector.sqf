@@ -183,7 +183,7 @@ if ((!(_sector in blufor_sectors)) && (([markerPos _sector, [_opforcount] call K
     } forEach _vehtospawn;
 
     if (_building_ai_max > 0) then {
-        _allbuildings = (nearestObjects [_sectorpos, ["House"], _building_range]) select {(alive _x) && !(_x isKindOf "spe_bocage_base")};
+        _allbuildings = (nearestObjects [_sectorpos, ["House"], _building_range]) select {alive _x};
         _buildingpositions = [];
         {
             _buildingpositions = _buildingpositions + ([_x] call BIS_fnc_buildingPositions);

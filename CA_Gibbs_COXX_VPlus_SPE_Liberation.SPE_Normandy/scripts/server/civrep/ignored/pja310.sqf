@@ -7,7 +7,7 @@ KP_liberation_cr_ign_buildings = [
 	"Land_BoatSmall_2a",
 	"Land_BoatSmall_2b",
 	"Land_Brana02nodoor",
-	"Land_Antenna",
+	"Land_Communication_F",
 	"Land_Farm_WTower",
 	"Land_Ind_BoardsPack1",
 	"Land_Ind_BoardsPack2",

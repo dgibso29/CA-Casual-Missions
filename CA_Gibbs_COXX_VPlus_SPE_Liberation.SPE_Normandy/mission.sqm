@@ -13,18 +13,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=455;
+		nextID=457;
 	};
 	class LayerIndexProvider
 	{
-		nextID=10;
+		nextID=14;
 	};
 	class Camera
 	{
-		pos[]={5874.3389,112.90185,14550.995};
-		dir[]={-0.75761223,-0.52548802,0.38715124};
-		up[]={-0.46793097,0.85080099,0.23911975};
-		aside[]={0.4550432,1.4901161e-008,0.89046931};
+		pos[]={40.718357,124.59908,13406.79};
+		dir[]={-0.20797457,-0.39415985,0.89520085};
+		up[]={-0.089196391,0.91904187,0.38393489};
+		aside[]={0.97405881,-7.4505806e-009,0.22629498};
 	};
 };
 binarizationWanted=0;
@@ -60,13 +60,13 @@ addons[]=
 	"WW2_SPE_Core_c_Core_c_Eventhandlers",
 	"WW2_SPE_Assets_c_Weapons_Ammoboxes_c",
 	"WW2_SPE_Assets_c_Weapons_SimpleObjects_c",
-	"A3_Modules_F_Hc"
+	"AICommand"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=28;
+		items=29;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -230,6 +230,11 @@ class AddonsMetaData
 		{
 			className="WW2_SPE_Assets_c_Weapons_SimpleObjects_c";
 			name="WW2_SPE_Assets_c_Weapons_SimpleObjects_c";
+		};
+		class Item28
+		{
+			className="AICommand";
+			name="AICommand";
 		};
 	};
 };
@@ -1108,17 +1113,17 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={952.36432,43.173599,11724.814};
-						angles[]={6.2698536,1.0505421,0.016662678};
+						position[]={520.2677,29.855446,12193.035};
+						angles[]={0,3.1394513,0};
 					};
 					side="Empty";
-					flags=4;
 					class Attributes
 					{
 						name="startbase";
 					};
 					id=62;
 					type="Land_ClutterCutter_small_F";
+					atlOffset=0.68437958;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1142,17 +1147,17 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={941.96912,43.211979,11737.368};
-						angles[]={6.2665191,3.1257224,0.02666023};
+						position[]={542.4093,32.122574,12222.129};
+						angles[]={0,5.214632,0};
 					};
 					side="Empty";
-					flags=4;
 					class Attributes
 					{
 						name="huronspawn";
 					};
 					id=64;
 					type="Land_ClutterCutter_small_F";
+					atlOffset=0.68439865;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1176,17 +1181,17 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={961.47784,43.561508,11737.165};
-						angles[]={6.2731905,3.070837,0.0066682254};
+						position[]={528.19958,30.811956,12216.418};
+						angles[]={0,5.1597462,0};
 					};
 					side="Empty";
-					flags=4;
 					class Attributes
 					{
 						name="base_boxspawn";
 					};
 					id=65;
 					type="Land_ClutterCutter_small_F";
+					atlOffset=0.68435097;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1213,7 +1218,7 @@ class Mission
 					text="Operation Base";
 					type="mil_start";
 					colorName="ColorWEST";
-					angle=0.44420746;
+					angle=0.44420707;
 					id=66;
 				};
 				class Item25
@@ -1221,17 +1226,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={955.78076,44.220001,11755.896};
-						angles[]={0,0.44524786,0};
+						position[]={545.57843,31.954821,12174.674};
+						angles[]={0,2.534157,0};
 					};
 					side="Empty";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						init="this setVariable [""ace_medical_isMedicalFacility"", true, true];";
 					};
 					id=67;
 					type="Land_Medevac_house_V1_F";
+					atlOffset=0.68437958;
 				};
 				class Item26
 				{
@@ -6373,13 +6379,14 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={950.80127,42.705704,11735.4};
+				position[]={530.2384,29.377316,12189.15};
+				angles[]={6.2665229,2.0891526,0.019996032};
 			};
 			areaSize[]={28.934265,0,15.813477};
 			flags=1;
 			id=378;
 			type="ModuleHideTerrainObjects_F";
-			atlOffset=-0.68434525;
+			atlOffset=3.4332275e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9617,10 +9624,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={173.15244,41.103489,12787.972};
+				position[]={-40.370365,45.674313,13555.425};
 			};
-			id=454;
-			type="HighCommand";
+			id=456;
+			type="AdvancedAICommand_Commanders";
+			atlOffset=3.0517578e-005;
 		};
 	};
 	class Connections

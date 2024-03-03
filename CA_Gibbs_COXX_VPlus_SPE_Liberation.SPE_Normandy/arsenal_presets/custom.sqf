@@ -836,12 +836,12 @@ GRLIB_arsenal_items = [
 	
     // Vanilla Standard Items
     "SPE_US_FirstAidKit",                                                  // First Aid Kit
-    "ItemMap",                                                      // Map
+    "ItemMap",                                                 // Map
     "SPE_US_ItemWatch",                                                    // Watch
     "SPE_US_Medkit",                                                      // Medikit
     "SPE_US_ItemCompass",                                                      // Medikit
     "MineDetector",                                                 // Mine Detector
-    "SPE_ToolKit"                                                     // Toolkit
+    "SPE_ToolKit",                                                     // Toolkit
 
 	  // ACE Items
     "ACE_acc_pointer_green",                                        // Laser Pointer (green)
@@ -932,7 +932,7 @@ GRLIB_arsenal_items = [
     "ACRE_SEM70",                                                   // SEM 70
     "ACRE_VHF30108",                                                // VHF30108 GSM
     "ACRE_VHF30108MAST",                                            // VHF30108 Mast
-    "ACRE_VHF30108SPIKE",                                           // VHF30108 GS
+    "ACRE_VHF30108SPIKE"                                           // VHF30108 GS
 
 ];
 

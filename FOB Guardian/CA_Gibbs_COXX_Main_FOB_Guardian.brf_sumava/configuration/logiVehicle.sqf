@@ -51,8 +51,8 @@ private _tankCode =
 };
 
 // This special command lets you run some code on the vehicle you just spawned, kind of like the "Init" box in the editor.
-ADD_VEHICLE_WITH_CODE(example,"CUP_B_M1A2C_Woodland_US_Army",2,_tankCode);
-ADD_VEHICLE_WITH_CODE(example,"CUP_B_M2Bradley_USA_W",2,_tankCode);
+ADD_VEHICLE_WITH_CODE(example_blu,"CUP_B_M1A2C_Woodland_US_Army",2,_tankCode);
+ADD_VEHICLE_WITH_CODE(example_blu,"CUP_B_M2Bradley_USA_W",2,_tankCode);
 
 
 // Set the faction of the logi vehicle.  Used to choose the correct gear for gearscripted crates etc.

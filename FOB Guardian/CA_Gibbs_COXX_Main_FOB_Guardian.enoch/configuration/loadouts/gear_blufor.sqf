@@ -224,7 +224,7 @@ CREATE_LOADOUT(crew,_baseLoadout);
 
 _baseLoadout = [[["CUP_smg_MP5A5","","","",["CUP_30Rnd_9x19_MP5",30],[],""],[],[],["CUP_U_B_USArmy_PilotOverall",[["ACE_elasticBandage",1],["ACE_fieldDressing",5],["ACE_packingBandage",1],["ACE_splint",1],["ACE_tourniquet",2],["ACE_salineIV",1],["ACE_Canteen",1],["ACE_MapTools",1],["ACE_Flashlight_XL50",1],["ACRE_PRC343",1],["ACE_painkillers",2,10]]],["V_Chestrig_oli",[["ACE_MapTools",1],["ACE_Flashlight_XL50",1],["ACE_fieldDressing",5],["SmokeShell",4,1],["SmokeShellBlue",2,1],["SmokeShellRed",2,1],["SmokeShellGreen",2,1],["CUP_30Rnd_9x19_MP5",4,30]]],[],"cwr3_b_headgear_pilot","",["Binocular","","","",[],[],""],["ItemMap","ItemGPS","","ItemCompass","ItemWatch",""]],[]];
 
-CREATE_LOADOUT(pilot,_baseLoadout);
+CREATE_LOADOUT(helo,_baseLoadout);
 
 
 // Engineer/logi Loadout
@@ -248,7 +248,8 @@ CREATE_CRATE(small);  // The name of this crate is "small".  You will need to us
                       // INFO: the name of this crate in-game will be "crate_small".
 
 ADD_RIFLE_TO_CRATE(small,rif,2);    // This crate now contains two of the Rifleman's rifles in it.
-ADD_LAUNCHER_TO_CRATE(small,lat,2); // This crate now contains two of the LAT soldier's launchers in it.
+ADD_LAUNCHER_TO_CRATE(small,lat,3); // This crate now contains two of the LAT soldier's launchers in it.
+ADD_ITEMS_TO_CRATE(small,"cwr3_m72a3_m",3); // The Rifleman has normal bullets loaded into his gun.  To add Tracer rounds into this box, we can use this command.
 ADD_PISTOL_TO_CRATE(small,rif,2);   // Two of the Rifleman's pistols.  If the Rifleman doesn't have a pistol, you can choose it from other units (for example, ftl or co).
 
 ADD_RIFLE_AMMO_TO_CRATE(small,rif,30); // This crate now contains two rifle magazines in it, which the Rifleman can use.
@@ -286,6 +287,8 @@ ADD_ITEMS_TO_CRATE(small,"ACRE_PRC148",2);
 ADD_ITEMS_TO_CRATE(small,"Binocular",2);
 ADD_ITEMS_TO_CRATE(small,"Toolkit",1);
 
+
+
 FINALIZE_CRATE(small);
 
 
@@ -293,7 +296,8 @@ FINALIZE_CRATE(small);
 CREATE_CRATE(med);
 
 ADD_RIFLE_TO_CRATE(med,rif,4);
-ADD_LAUNCHER_TO_CRATE(med,lat,4);
+ADD_LAUNCHER_TO_CRATE(med,lat,6);
+ADD_ITEMS_TO_CRATE(med,"cwr3_m72a3_m",6); // The Rifleman has normal bullets loaded into his gun.  To add Tracer rounds into this box, we can use this command.
 ADD_PISTOL_TO_CRATE(med,rif,4);
 
 ADD_PISTOL_AMMO_TO_CRATE(med,rif,12);

@@ -1,0 +1,955 @@
+{
+    "event": {
+        "event_date": "2000-01-01T20:00:00Z",
+        "event_title": "FOB Guardian",
+        "event_desc": "-- insert google docs link here --",
+        "event_owner": "Gibbs",
+        "event_reserves": [],
+        "event_repo": "MAIN"
+    },
+    "sides": [
+        {
+            "side": "BLU",
+            "groups": [
+                {
+                    "group_data": {
+                        "group_name": "COMMAND",
+                        "group_orbat_icon": "nato_inf",
+                        "group_gear": "",
+                        "group_callsign": "COMMAND",
+                        "group_background": "WHITE"
+                    },
+                    "slots": [
+                        {
+                            "slot_name": "Commander",
+                            "slot_player": {
+                                "player_id": "",
+                                "player_name": ""
+                            },
+                            "slot_shortcode": "CO",
+                            "slot_gear": "M16A2 Carbine",
+                            "slot_restricted": true,
+                            "slot_locked": false,
+                            "slot_icon_code": "CO",
+                            "slot_dlc": [],
+                            "raffle_winner": {
+                                "player_id": "",
+                                "player_name": ""
+                            },
+                            "slot_raffle": false,
+                            "raffle_entrants": []
+                        },
+                        {
+                            "slot_name": "Executive Officer",
+                            "slot_player": {
+                                "player_id": "",
+                                "player_name": ""
+                            },
+                            "slot_shortcode": "XO",
+                            "slot_gear": "M16A2 Carbine",
+                            "slot_restricted": true,
+                            "slot_locked": false,
+                            "slot_icon_code": "OFFICER",
+                            "slot_dlc": [],
+                            "raffle_winner": {
+                                "player_id": "",
+                                "player_name": ""
+                            },
+                            "slot_raffle": false,
+                            "raffle_entrants": []
+                        },
+                        {
+                            "slot_name": "Forward Air Controller",
+                            "slot_player": {
+                                "player_id": "",
+                                "player_name": ""
+                            },
+                            "slot_shortcode": "FAC",
+                            "slot_gear": "M16A2 Carbine M203",
+                            "slot_restricted": true,
+                            "slot_locked": false,
+                            "slot_icon_code": "OFFICER",
+                            "slot_dlc": [],
+                            "raffle_winner": {
+                                "player_id": "",
+                                "player_name": ""
+                            },
+                            "slot_raffle": false,
+                            "raffle_entrants": []
+                        },
+                        {
+                            "slot_name": "Medic",
+                            "slot_player": {
+                                "player_id": "",
+                                "player_name": ""
+                            },
+                            "slot_shortcode": "MED",
+                            "slot_gear": "M16A2",
+                            "slot_restricted": true,
+                            "slot_locked": false,
+                            "slot_icon_code": "MED",
+                            "slot_dlc": [],
+                            "raffle_winner": {
+                                "player_id": "",
+                                "player_name": ""
+                            },
+                            "slot_raffle": false,
+                            "raffle_entrants": []
+                        },
+                        {
+                            "slot_name": "Combat Lifesaver",
+                            "slot_player": {
+                                "player_id": "",
+                                "player_name": ""
+                            },
+                            "slot_shortcode": "CLS",
+                            "slot_gear": "M16A2",
+                            "slot_restricted": false,
+                            "slot_locked": false,
+                            "slot_icon_code": "MED",
+                            "slot_dlc": [],
+                            "raffle_winner": {
+                                "player_id": "",
+                                "player_name": ""
+                            },
+                            "slot_raffle": false,
+                            "raffle_entrants": []
+                        },
+                        {
+                            "slot_name": "Logistics",
+                            "slot_player": {
+                                "player_id": "",
+                                "player_name": ""
+                            },
+                            "slot_shortcode": "LOGI",
+                            "slot_gear": "M16A2",
+                            "slot_restricted": true,
+                            "slot_locked": false,
+                            "slot_icon_code": "ENG",
+                            "slot_dlc": [],
+                            "raffle_winner": {
+                                "player_id": "",
+                                "player_name": ""
+                            },
+                            "slot_raffle": false,
+                            "raffle_entrants": []
+                        },
+                        {
+                            "slot_name": "Logistics",
+                            "slot_player": {
+                                "player_id": "",
+                                "player_name": ""
+                            },
+                            "slot_shortcode": "LOGI",
+                            "slot_gear": "M16A2",
+                            "slot_restricted": true,
+                            "slot_locked": false,
+                            "slot_icon_code": "ENG",
+                            "slot_dlc": [],
+                            "raffle_winner": {
+                                "player_id": "",
+                                "player_name": ""
+                            },
+                            "slot_raffle": false,
+                            "raffle_entrants": []
+                        }
+                    ],
+                    "child": [
+                        {
+                            "group_data": {
+                                "group_name": "ALPHA",
+                                "group_orbat_icon": "nato_inf",
+                                "group_gear": "",
+                                "group_callsign": "ALPHA",
+                                "group_background": "WHITE"
+                            },
+                            "slots": [
+                                {
+                                    "slot_name": "Fireteam Leader",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "FTL",
+                                    "slot_gear": "M16A2 M203",
+                                    "slot_restricted": true,
+                                    "slot_locked": false,
+                                    "slot_icon_code": "SL",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Combat Lifesaver",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "CLS",
+                                    "slot_gear": "M16A2",
+                                    "slot_restricted": false,
+                                    "slot_locked": false,
+                                    "slot_icon_code": "MED",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Autorifleman",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "AR",
+                                    "slot_gear": "M249E2",
+                                    "slot_restricted": false,
+                                    "slot_locked": false,
+                                    "slot_icon_code": "AR",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Assistant AR",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "AAR",
+                                    "slot_gear": "M16A2",
+                                    "slot_restricted": false,
+                                    "slot_locked": false,
+                                    "slot_icon_code": "MAN",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Marksman",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "MK",
+                                    "slot_gear": "M14",
+                                    "slot_restricted": false,
+                                    "slot_locked": false,
+                                    "slot_icon_code": "MAN",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Anti-tank",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "AT",
+                                    "slot_gear": "M16A2 + M72A3 LAW",
+                                    "slot_restricted": false,
+                                    "slot_locked": false,
+                                    "slot_icon_code": "AT",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "group_data": {
+                                "group_name": "ANVIL",
+                                "group_orbat_icon": "nato_inf",
+                                "group_gear": "",
+                                "group_callsign": "ANVIL",
+                                "group_background": "WHITE"
+                            },
+                            "slots": [
+                                {
+                                    "slot_name": "Commander",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "CO",
+                                    "slot_gear": "MP5A5",
+                                    "slot_restricted": true,
+                                    "slot_locked": false,
+                                    "slot_icon_code": "CO",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Gunner",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "GUN",
+                                    "slot_gear": "MP5A5",
+                                    "slot_restricted": false,
+                                    "slot_locked": false,
+                                    "slot_icon_code": "MAN",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Driver",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "DRV",
+                                    "slot_gear": "MP5A5",
+                                    "slot_restricted": false,
+                                    "slot_locked": false,
+                                    "slot_icon_code": "MAN",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "group_data": {
+                                "group_name": "BLACK WIDOW",
+                                "group_orbat_icon": "nato_inf",
+                                "group_gear": "",
+                                "group_callsign": "BLACK WIDOW",
+                                "group_background": "WHITE"
+                            },
+                            "slots": [
+                                {
+                                    "slot_name": "Pilot",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "Pilot",
+                                    "slot_gear": "MP5A5",
+                                    "slot_restricted": true,
+                                    "slot_locked": false,
+                                    "slot_icon_code": "MAN",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Copilot",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "Copilot",
+                                    "slot_gear": "MP5A5",
+                                    "slot_restricted": false,
+                                    "slot_locked": false,
+                                    "slot_icon_code": "MAN",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Crew Chief",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "Crew",
+                                    "slot_gear": "MP5A5",
+                                    "slot_restricted": false,
+                                    "slot_locked": false,
+                                    "slot_icon_code": "MAN",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Loadmaster",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "Loadmaster",
+                                    "slot_gear": "MP5A5",
+                                    "slot_restricted": false,
+                                    "slot_locked": false,
+                                    "slot_icon_code": "MAN",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "group_data": {
+                                "group_name": "BRAVO",
+                                "group_orbat_icon": "nato_inf",
+                                "group_gear": "",
+                                "group_callsign": "BRAVO",
+                                "group_background": "WHITE"
+                            },
+                            "slots": [
+                                {
+                                    "slot_name": "Fireteam Leader",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "FTL",
+                                    "slot_gear": "M16A2 M203",
+                                    "slot_restricted": true,
+                                    "slot_locked": false,
+                                    "slot_icon_code": "SL",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Combat Lifesaver",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "CLS",
+                                    "slot_gear": "M16A2",
+                                    "slot_restricted": false,
+                                    "slot_locked": false,
+                                    "slot_icon_code": "MED",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Autorifleman",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "AR",
+                                    "slot_gear": "M249E2",
+                                    "slot_restricted": false,
+                                    "slot_locked": false,
+                                    "slot_icon_code": "AR",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Assistant AR",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "AAR",
+                                    "slot_gear": "M16A2",
+                                    "slot_restricted": false,
+                                    "slot_locked": false,
+                                    "slot_icon_code": "MAN",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Marksman",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "MK",
+                                    "slot_gear": "M14",
+                                    "slot_restricted": false,
+                                    "slot_locked": false,
+                                    "slot_icon_code": "MAN",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Anti-tank",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "AT",
+                                    "slot_gear": "M16A2 + M72A3 LAW",
+                                    "slot_restricted": false,
+                                    "slot_locked": false,
+                                    "slot_icon_code": "AT",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "group_data": {
+                                "group_name": "CHARLIE",
+                                "group_orbat_icon": "nato_inf",
+                                "group_gear": "",
+                                "group_callsign": "CHARLIE",
+                                "group_background": "WHITE"
+                            },
+                            "slots": [
+                                {
+                                    "slot_name": "Fireteam Leader",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "FTL",
+                                    "slot_gear": "M16A2 M203",
+                                    "slot_restricted": true,
+                                    "slot_locked": true,
+                                    "slot_icon_code": "SL",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Combat Lifesaver",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "CLS",
+                                    "slot_gear": "M16A2",
+                                    "slot_restricted": false,
+                                    "slot_locked": true,
+                                    "slot_icon_code": "MED",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Autorifleman",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "AR",
+                                    "slot_gear": "M249E2",
+                                    "slot_restricted": false,
+                                    "slot_locked": true,
+                                    "slot_icon_code": "AR",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Assistant AR",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "AAR",
+                                    "slot_gear": "M16A2",
+                                    "slot_restricted": false,
+                                    "slot_locked": true,
+                                    "slot_icon_code": "MAN",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Marksman",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "MK",
+                                    "slot_gear": "M14",
+                                    "slot_restricted": false,
+                                    "slot_locked": true,
+                                    "slot_icon_code": "MAN",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Anti-tank",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "AT",
+                                    "slot_gear": "M16A2 + M72A3 LAW",
+                                    "slot_restricted": false,
+                                    "slot_locked": true,
+                                    "slot_icon_code": "AT",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "group_data": {
+                                "group_name": "HAMMER",
+                                "group_orbat_icon": "nato_inf",
+                                "group_gear": "",
+                                "group_callsign": "HAMMER",
+                                "group_background": "WHITE"
+                            },
+                            "slots": [
+                                {
+                                    "slot_name": "Commander",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "CO",
+                                    "slot_gear": "MP5A5",
+                                    "slot_restricted": true,
+                                    "slot_locked": true,
+                                    "slot_icon_code": "CO",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Gunner",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "GUN",
+                                    "slot_gear": "MP5A5",
+                                    "slot_restricted": false,
+                                    "slot_locked": true,
+                                    "slot_icon_code": "MAN",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Driver",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "DRV",
+                                    "slot_gear": "MP5A5",
+                                    "slot_restricted": false,
+                                    "slot_locked": true,
+                                    "slot_icon_code": "MAN",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "group_data": {
+                                "group_name": "PHANTOM",
+                                "group_orbat_icon": "nato_inf",
+                                "group_gear": "",
+                                "group_callsign": "PHANTOM",
+                                "group_background": "WHITE"
+                            },
+                            "slots": [
+                                {
+                                    "slot_name": "Pilot",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "Pilot",
+                                    "slot_gear": "MP5A5",
+                                    "slot_restricted": true,
+                                    "slot_locked": false,
+                                    "slot_icon_code": "MAN",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": true,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Copilot",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "Copilot",
+                                    "slot_gear": "MP5A5",
+                                    "slot_restricted": false,
+                                    "slot_locked": false,
+                                    "slot_icon_code": "MAN",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": true,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Crew Chief",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "Crew",
+                                    "slot_gear": "MP5A5",
+                                    "slot_restricted": false,
+                                    "slot_locked": true,
+                                    "slot_icon_code": "MAN",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Loadmaster",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "Loadmaster",
+                                    "slot_gear": "MP5A5",
+                                    "slot_restricted": false,
+                                    "slot_locked": false,
+                                    "slot_icon_code": "MAN",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "group_data": {
+                                "group_name": "REAPER",
+                                "group_orbat_icon": "nato_inf",
+                                "group_gear": "",
+                                "group_callsign": "REAPER",
+                                "group_background": "WHITE"
+                            },
+                            "slots": [
+                                {
+                                    "slot_name": "Pilot",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "Pilot",
+                                    "slot_gear": "MP5A5",
+                                    "slot_restricted": true,
+                                    "slot_locked": true,
+                                    "slot_icon_code": "MAN",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Copilot",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "Copilot",
+                                    "slot_gear": "MP5A5",
+                                    "slot_restricted": false,
+                                    "slot_locked": true,
+                                    "slot_icon_code": "MAN",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "group_data": {
+                                "group_name": "SCYTHE",
+                                "group_orbat_icon": "nato_inf",
+                                "group_gear": "",
+                                "group_callsign": "SCYTHE",
+                                "group_background": "WHITE"
+                            },
+                            "slots": [
+                                {
+                                    "slot_name": "Pilot",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "Pilot",
+                                    "slot_gear": "MP5A5",
+                                    "slot_restricted": true,
+                                    "slot_locked": true,
+                                    "slot_icon_code": "MAN",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                },
+                                {
+                                    "slot_name": "Copilot",
+                                    "slot_player": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_shortcode": "Copilot",
+                                    "slot_gear": "MP5A5",
+                                    "slot_restricted": false,
+                                    "slot_locked": true,
+                                    "slot_icon_code": "MAN",
+                                    "slot_dlc": [],
+                                    "raffle_winner": {
+                                        "player_id": "",
+                                        "player_name": ""
+                                    },
+                                    "slot_raffle": false,
+                                    "raffle_entrants": []
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
